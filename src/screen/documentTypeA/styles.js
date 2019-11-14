@@ -10,7 +10,7 @@ export default {
     left: 10,
   },
   ContainerItem: {
-    borderBottomWidth: 1,
+    borderBottomWidth: 0.3,
     height: 48,
     width: '100%',
     borderColor: '#A7A9AB',

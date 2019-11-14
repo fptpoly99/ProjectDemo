@@ -7,12 +7,16 @@ import {
   FlatList,
   Image,
   ScrollView,
+  Dimensions
 } from 'react-native';
 import {useSelector} from 'react-redux';
 import styles from './styles';
 import Colors from '../../constant/Colors';
 const image = require('../../assets/images/images.png');
+const img = require('../../assets/images/img1.jpg')
+const img2 = require('../../assets/images/img2.jpg')
 import ImageItem from '../../components/ImageItem';
+const {height} = Dimensions.get('window').height;
 export default function LibraryScreen(props) {
   const project = useSelector(state => state.project.availableProject);
   return (
@@ -32,11 +36,11 @@ export default function LibraryScreen(props) {
 
       <ScrollView
         horizontal={true}
-        style={{flexDirection: 'row', margin: 18, height: 200}}>
+        style={{ margin: 18, height: 200}}>
         <TouchableOpacity
           onPress={() => props.navigation.navigate('ImageOverview')}>
           <Image
-            source={require('../../assets/images/fb.jpg')}
+            source={require('../../assets/images/img1.jpg')}
             style={styles.image}
             resizeMode="cover"
           />
@@ -46,7 +50,7 @@ export default function LibraryScreen(props) {
         </TouchableOpacity>
         <TouchableOpacity>
           <Image
-            source={require('../../assets/images/fb.jpg')}
+            source={require('../../assets/images/img2.jpg')}
             style={styles.image}
             resizeMode="cover"
           />
@@ -56,7 +60,7 @@ export default function LibraryScreen(props) {
 
         <TouchableOpacity>
           <Image
-            source={require('../../assets/images/fb.jpg')}
+            source={require('../../assets/images/img2.jpg')}
             style={styles.image}
             resizeMode="cover"
           />

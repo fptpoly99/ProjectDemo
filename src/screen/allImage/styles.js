@@ -23,4 +23,14 @@ export default {
         textAlign: 'center',
         color: '#57585B',
       },
+      touableContainer:{
+        borderBottomWidth: 1,
+        marginBottom: 20,
+        borderBottomColor: '#EBEBEB',
+      },
+      touable:{
+        flexDirection: 'row',
+            alignItems: 'center',
+            marginBottom: 17,
+      }
 }

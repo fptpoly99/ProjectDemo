@@ -28,6 +28,8 @@ const styles = StyleSheet.create({
     height: 92,
     marginVertical:5,
     borderRadius:1,
+   
+
     
   },
 
